@@ -1,0 +1,54 @@
+{% extends 'base.html'%} 
+
+
+{%block body%}
+<div class="container">
+    <div class="banner">
+        <div class="banner-wrapper">
+          <div class="banner-content">
+            <h1 class="heading">Justie Confectionery</h1>
+           
+            <p class="sacramento banner-sacramento" style="margin-bottom: 40px">
+             We bring classic catering with a side of creativity to your table
+            </p>
+    
+            <div class="link-button">
+              <a href="{{url_for('views.our_services')}}">Our Services</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="great-people-food">
+        <h1 class="yellow-text heading">GREAT PEOPLE +
+          GREAT FOOD</h1>
+          <p>We offer a wide range of catering services, from drop-off to full-service catering, launch parties to weddings.</p> <br>
+          <p>Browse our sample menus for mouth-watering ideas
+
+            for your next event.</p>
+
+            <div class="new-link-button">
+              <a href="{{url_for('views.our_services')}}">VIEW OUR CATERING SERVICES</a>
+            </div>
+      </div>
+
+      <div class="pick-up-drop-off">
+        <div class="img-pick-up-drop-off">
+
+        </div>
+
+        <div class="pick-up-drop-off-text">
+          <div>
+            
+          <h1 class="heading sacramento" style="margin: 0;">Any Occasion</h1>
+          <h3 class="sub-heading">FULL-SERVICE AND DROP-OFF</h3>
+          <p>Full-Service is the perfect dining experience where you and your guests can enjoy engaging conversations while our professional wait staff takes care of every need. If you are looking for something much more casual, our drop-off catering service is a great way to avoid making a big mess in the kitchen. We'll deliver the meal hot from our kitchen right to your door.</p>
+          <div class="new-link-button">
+              <a href="{{url_for('views.our_services')}}">LEARN MORE</a>
+            </div>
+        
+        </div>
+        </div>
+      </div>
+</div>
+{%endblock body%}

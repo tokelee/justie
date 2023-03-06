@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../static/images/logo.jpeg" />
+    <link rel="stylesheet" href="../static/css/index.css">
+    <title>{{title}}</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+          <div class="navbar-wrapper">
+            <div class="brand">
+              <a href="/">
+              <img src="../static/images/logo.jpeg" alt="" />
+            </a>
+            </div>
+  
+            <div class="options">
+  
+              <div class="big-screen-options">
+   <a href="{{url_for('views.index')}}">Home</a>
+              <a href="{{url_for('views.our_services')}}">Our Services</a>
+              </div>
+             
+  
+              <button class="small-screen-toggle" onclick="showNavdropdown()">
+                <img src="../static/images/menu.svg" height="100%" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <div id="nav-dropdownID" class="nav-dropdown ">
+          <div class="nav-dropdown-wrapper">
+            
+              <a href="{{url_for('views.index')}}">Home</a>
+            
+              <a href="{{url_for('views.our_services')}}">Our Services</a>
+            
+          </div>
+          
+          
+        </div>
+      </nav>
+    {%block body%}
+    {%endblock body%}
+
+    <footer>
+      <div class="footer">
+        <div class="footer-row">
+          <h2>ABOUT US</h2>
+          <p>We pride ourselves on creating unique menus to accommodate every special event. From casual in-home brunches and office lunches to elegant weddings and glamorous film/tv productions.</p>
+          <div class="mb-2em"></div>
+          <div class="footer-img">
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="footer-row">
+          <h2> SERVICES </h2>
+<p>Our catering services are perfect for any size, any style, and are customized to your budget.</p>
+<div class="mb-2em"></div>
+<h4> WEDDING </h4>
+<p>We created two wedding packages to make planning your wedding easier than ever. We guide you through curating the perfect menu for you and your guests.</p>
+<div class="mb-2em"></div>
+<h4>CORPORATE</h4>
+<p>Our corporate lunch catering package is an easy drop-off or pick-up service. Simply contact us  and like magic, large trays of restaurant-quality food will come to you.</p>
+<div class="mb-2em"></div>
+<h4>SOCIAL</h4>
+<p>From birthday or anniversary parties to non-profit fundraisers and more, our social catering menu will have you breaking bread with your closest friends and community partners.</p>
+<div class="mb-2em"></div>
+<h4>HOLIDAY</h4>
+<p>Our holiday catering menus are sure to impress. Let our team handle the cooking while you sit back and entertain your friends and family.</p>
+        </div>
+        <div class="footer-row">
+          <h2>OF FOOD</h2>
+          <div class="mb-2em"></div>
+        <h4>OUR LOCATION</h4>
+<p>Justie </p>
+<p>51 S. Grove Ave </p>
+<p>Elgin, IL 60120</p>
+<p>United States Of America </p>
+ <div class="mb-2em"></div>
+<h4>CONTACT INFORMATION</h4>
+
+<p><a href="tel:+2348057902947">Phone: +234-805-790-2947</a> </p>
+<p><a href="mailto:Odeyjustina429@gmail.com">Odeyjustina429@gmail.com</a> </p>
+<div class="mb-2em"></div>
+        <h2>HAVE QUESTIONS?</h2>
+      </p>Please feel free to reach out to our friendly and responsive staff with any questions you may have.</p>
+      <div class="new-link-button">
+        <a href="https://wa.link/nak8zc">CONNECT WITH US</a>
+      </div>
+        </div>
+      </div>
+      <div class="copy">
+        <h4>COPYRIGHT JUSTIE CONFECTIONERY © 2023 | PRIVACY POLICY</h4>
+      </div>
+    </footer>
+
+    <script>
+      const showNavdropdown = () =>{
+        var dropdownNav = document.getElementById('nav-dropdownID')
+        dropdownNav.classList.toggle('show-nav-dropdown')
+      }
+    </script>
+</body>
+</html>
